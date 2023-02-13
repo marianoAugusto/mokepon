@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+body {
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,115,70,0.7176995798319328) 71%);
+    font-family: 'Patua One', cursive;;
+}
+    
+
+.titulo {
+    color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid brown;
+    padding: 10px;
+}
+
+.elige{
+    color: brown;
+    border-radius: 5px;
+    font-size: 24;
+}
+
+.tarjetas, .tarjetas-ataques{
+    display: flex;
+    gap: 10px;
+
+}
+.tarjeta-de-mokepon{
+    width: 160px;
+    height: 100px;
+    background: lightblue;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid brown;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon img{
+    width: 80px;
+}
+
+#boton-mascota{
+    width: 160px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid brown;
+    color: brown;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    background-color: cornflowerblue;
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-ataque{
+    background-color: lightblue;
+    border: 2px solid brown;
+    padding: 10px;
+    border-radius: 5px;
+    color: brown;
+    width: 100px;
+}
+
+#mensajes{
+    width: 200px;
+    background-color: lightblue;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid brown;
+    color: brown;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+#boton-reiniciar{
+    border: transparent;
+    color: brown;
+
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+    
+}
+
+.ataques-jugador, .ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid brown;
+    color: brown; 
+    margin: 20px 10px 10px;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+@media (max-width: 360px){
+    .tarjetas, .tarjetas-ataques{
+        flex-direction: column;
+    }
+}
+
